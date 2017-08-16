@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/ic.ico">
+    <title>Vote</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/centerpage.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/opensans.css" rel="stylesheet" type="text/css">
+    <link href="css/josefinslab.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	/*hr.bline {*/
+        /*height: 10px;*/
+        /*border: 0;*/
+        /*box-shadow: 0 10px 10px -10px #8c8b8b inset;*/
+    /*}*/
+
+    hr.bline {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: -webkit-linear-gradient(left, #8A0707, #ccc, #8A0707);
+        background-image: -moz-linear-gradient(left, #8A0707, #ccc, #8A0707);
+        background-image: -ms-linear-gradient(left, #8A0707, #ccc, #8A0707);
+        background-image: -o-linear-gradient(left, #8A0707, #ccc, #8A0707);
+    }
+    h3 > a {
+        color: #d4d4d4;
+    }
+
+    img {
+        margin:auto;
+        border-radius:20px;
+    }
+
+    .voteButton {
+        text-align:center;
+    }
+
+    .table-attr {
+        text-align: right;
+    }
+
+    .set-justify {
+        text-align: justify;
+    }
+
+    .set-transparency {
+        color: #ffffff;
+        background: rgba(138,7,7,0.6);
+    }
+
+    .white {
+        color: #ffffff;
+    }
+
+    .info-zone, .intro-text {
+        color: #ffffff;
+        /*text-shadow: 0 0 0 #000, 0 0 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
+    }
+
+    .btn {
+        color: #ffffff;
+        background-color: #8A0707;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!--<div class="box">-->
+                <div class="jumbotron set-transparency">
+                    <h1 class="text-center">THEME</h1>
+                    <p class="set-justify white">Some description about the theme. Edward Rolf Tufte is an American statistician and professor emeritus of political science, statistics, and computer science at Yale University. He is noted for his writings on information design and as a pioneer in the field of data visualization.
+                    </p>
+                </div>
+            <!--</div>-->
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">The
+                        <strong>Candidates</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/hari2.jpg">
+                    <h3><a id="candone" href="#" onclick="return false;">Hari Won</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Lưu Esther</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Manager</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Hunter</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11001" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/chibi2.jpg">
+                    <h3><a id="candtwo" href="#" onclick="return false;">Chibi Hoang</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Nguyễn Hoàng Yến</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Assistant</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Witch</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11002" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/midu2.jpg">
+                    <h3><a id="candthree" href="#" onclick="return false;">Midu Nguyen</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Đặng Thị Mỹ Dung</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Sales Manager</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Smoker</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11003" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai1.jpg">
+                    <h3><a id="candfour" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss ABC</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Boomer</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11004" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candfive" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11005" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/charlie1.jpg">
+                    <h3><a id="candsix" href="#" onclick="return false;">Charlie</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Charlotte Emma Aitchison</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Production Assistant</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Tank</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                    	<button id="11006" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candseven" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11007" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candeight" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11008" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candnine" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11009" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candten" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11010" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candeleven" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11011" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candtwelve" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11012" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candthirteen" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11013" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candfourteen" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11014" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="col-sm-4 text-center info-zone">
+                    <img class="img-responsive" src="img/ai2.jpg">
+                    <h3><a id="candfifteen" href="#" onclick="return false;">Somebody</a>
+                        <small>Artist</small>
+                    </h3>
+                    <table class="table table-condensed table-responsive">
+                        <tr>
+                            <td class="table-attr"><strong>Name:</strong></td>
+                            <td>Miss DEF</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Role:</strong></td>
+                            <td>Marketing Executive</td>
+                        </tr>
+                        <tr>
+                            <td class="table-attr"><strong>Zombie:</strong></td>
+                            <td>Charger</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <button id="11015" class="btn btn-default btn-lg voteButton" onclick="voteOn(this.id);">Vote</button>
+                    </div>
+                    <hr class="bline">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center white">
+                    <div style="padding-top:2em; letter-spacing: 2px;">
+                        <a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;
+                        <a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-3x"></i></a>
+                    </div>
+                    <h3>Copyright &copy; Superman.</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vts.js"></script>
+</body>
+</html>
